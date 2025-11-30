@@ -7,13 +7,13 @@ import { Button } from '@/components/ui/button';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-linear-to-br from-primary via-primary/95 to-primary/90 text-white overflow-hidden">
+    <section className="relative min-h-[85vh] md:min-h-screen flex items-center bg-linear-to-br from-primary via-primary/95 to-primary/90 text-white overflow-hidden pt-16 md:pt-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-grid-white/[0.05] bg-size-[32px_32px]" />
       
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20 relative z-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4 sm:mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 sm:mb-6"
             >
               Acabados Industriales de{' '}
               <span className="text-secondary">Alta Calidad</span>
@@ -45,7 +45,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
+              className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
             >
               Protección y estética superior para tus productos. Tecnología de punta en recubrimiento electrostático con acabado de polvo poliéster.
             </motion.p>
@@ -54,7 +54,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="flex flex-col sm:flex-row gap-4 mb-12"
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12"
             >
               <Button
                 asChild
@@ -85,32 +85,32 @@ export default function Hero() {
             >
               <div className="flex items-start space-x-3 group">
                 <div className="relative">
-                  <Shield className="h-6 w-6 text-secondary shrink-0 mt-1" />
+                  <Shield className="h-5 w-5 sm:h-6 sm:w-6 text-secondary shrink-0 mt-1" />
                   <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[oklch(0.55_0.22_25)] opacity-60" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Máxima Durabilidad</h3>
-                  <p className="text-sm text-white/80">Resistencia superior a corrosión</p>
+                  <h3 className="font-semibold mb-1 text-sm sm:text-base">Máxima Durabilidad</h3>
+                  <p className="text-xs sm:text-sm text-white/80">Resistencia superior a corrosión</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 group">
                 <div className="relative">
-                  <Clock className="h-6 w-6 text-secondary shrink-0 mt-1" />
+                  <Clock className="h-5 w-5 sm:h-6 sm:w-6 text-secondary shrink-0 mt-1" />
                   <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[oklch(0.55_0.22_25)] opacity-60" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Entrega Rápida</h3>
-                  <p className="text-sm text-white/80">Tiempos de proceso optimizados</p>
+                  <h3 className="font-semibold mb-1 text-sm sm:text-base">Entrega Rápida</h3>
+                  <p className="text-xs sm:text-sm text-white/80">Tiempos de proceso optimizados</p>
                 </div>
               </div>
               <div className="flex items-start space-x-3 group">
                 <div className="relative">
-                  <Award className="h-6 w-6 text-secondary shrink-0 mt-1" />
+                  <Award className="h-5 w-5 sm:h-6 sm:w-6 text-secondary shrink-0 mt-1" />
                   <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 rounded-full bg-[oklch(0.55_0.22_25)] opacity-60" />
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-1">Calidad Garantizada</h3>
-                  <p className="text-sm text-white/80">Certificación de procesos</p>
+                  <h3 className="font-semibold mb-1 text-sm sm:text-base">Calidad Garantizada</h3>
+                  <p className="text-xs sm:text-sm text-white/80">Certificación de procesos</p>
                 </div>
               </div>
             </motion.div>
@@ -143,14 +143,14 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.5 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 hidden md:flex"
       >
         <div className="flex flex-col items-center text-white/60">
-          <span className="text-sm mb-2">Desliza para más</span>
+          <span className="text-xs sm:text-sm mb-2">Desliza para más</span>
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="w-6 h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2"
+            className="w-5 h-8 sm:w-6 sm:h-10 rounded-full border-2 border-white/40 flex items-start justify-center p-2"
           >
             <div className="w-1 h-2 bg-white/60 rounded-full" />
           </motion.div>

@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Phone } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SITE_CONFIG, NAVIGATION_LINKS, CONTACT_INFO } from '@/lib/constants';
+import { SITE_CONFIG, NAVIGATION_LINKS } from '@/lib/constants';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,53 +35,40 @@ export default function Header() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center text-gray-700 hover:text-primary">
-              <Phone className="h-4 w-4 mr-2" />
-              <span className="font-medium">{CONTACT_INFO.phone}</span>
-            </a>
+          <div className="hidden lg:flex items-center">
             <Button asChild>
               <Link href="/contacto">Solicitar Cotización</Link>
             </Button>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden p-2 text-gray-700"
-          >
-            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          {/* Mobile CTA & Menu Button */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <Button asChild size="sm" className="text-xs">
+              <Link href="/contacto">Cotizar</Link>
+            </Button>
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 text-gray-700"
+            >
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-3">
               {NAVIGATION_LINKS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-primary font-medium transition-colors"
+                  className="text-gray-700 hover:text-primary font-medium transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4 space-y-3">
-                <a
-                  href={`tel:${CONTACT_INFO.phone}`}
-                  className="flex items-center text-gray-700 hover:text-primary"
-                >
-                  <Phone className="h-4 w-4 mr-2" />
-                  <span className="font-medium">{CONTACT_INFO.phone}</span>
-                </a>
-                <Button asChild className="w-full">
-                  <Link href="/contacto" onClick={() => setIsMenuOpen(false)}>
-                    Solicitar Cotización
-                  </Link>
-                </Button>
-              </div>
             </div>
           </div>
         )}

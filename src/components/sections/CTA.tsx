@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone, Mail, MessageCircle } from 'lucide-react';
+import { ArrowRight, Mail, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { CONTACT_INFO } from '@/lib/constants';
@@ -37,7 +37,7 @@ export default function CTA() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.2 }}
-                      className="text-base sm:text-lg md:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
+                      className="text-sm sm:text-base md:text-lg lg:text-xl text-white/90 mb-6 sm:mb-8 leading-relaxed"
                     >
                       Obtén una cotización personalizada y descubre cómo la pintura electrostática puede mejorar la calidad y durabilidad de tus productos.
                     </motion.p>
@@ -46,12 +46,12 @@ export default function CTA() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.3 }}
-                      className="flex flex-col sm:flex-row gap-4"
+                      className="flex flex-col sm:flex-row gap-3 sm:gap-4"
                     >
                       <Button
                         asChild
                         size="lg"
-                        className="bg-secondary hover:bg-secondary/90 text-white"
+                        className="bg-secondary hover:bg-secondary/90 text-white w-full sm:w-auto"
                       >
                         <Link href="/contacto">
                           Solicitar Cotización
@@ -62,12 +62,9 @@ export default function CTA() {
                         asChild
                         size="lg"
                         variant="outline"
-                        className="bg-primary/10 border-primary/20 text-white hover:bg-white hover:text-primary"
+                        className="bg-primary/10 border-primary/20 text-white hover:bg-white hover:text-primary w-full sm:w-auto"
                       >
-                        <a href={`tel:${CONTACT_INFO.phone}`}>
-                          <Phone className="mr-2 h-5 w-5" />
-                          Llamar Ahora
-                        </a>
+                        <Link href="/servicios">Ver Servicios</Link>
                       </Button>
                     </motion.div>
                   </div>
@@ -78,37 +75,19 @@ export default function CTA() {
                     whileInView={{ opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.4 }}
-                    className="space-y-4"
+                    className="space-y-3 sm:space-y-4"
                   >
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 group hover:border-white/40 transition-colors">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-secondary rounded-lg p-3 relative">
-                          <Phone className="h-6 w-6 text-white" />
+                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 group hover:border-white/40 transition-colors">
+                      <div className="flex items-start space-x-3 sm:space-x-4">
+                        <div className="bg-secondary rounded-lg p-2 sm:p-3 relative">
+                          <Mail className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                           <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[oklch(0.55_0.22_25)] opacity-0 group-hover:opacity-80 transition-opacity" />
                         </div>
-                        <div>
-                          <h3 className="font-semibold mb-2">Llámanos</h3>
-                          <a
-                            href={`tel:${CONTACT_INFO.phone}`}
-                            className="text-white/90 hover:text-white text-lg"
-                          >
-                            {CONTACT_INFO.phone}
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 group hover:border-white/40 transition-colors">
-                      <div className="flex items-start space-x-4">
-                        <div className="bg-secondary rounded-lg p-3 relative">
-                          <Mail className="h-6 w-6 text-white" />
-                          <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[oklch(0.55_0.22_25)] opacity-0 group-hover:opacity-80 transition-opacity" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold mb-2">Escríbenos</h3>
+                        <div className="min-w-0 flex-1">
+                          <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Escríbenos</h3>
                           <a
                             href={`mailto:${CONTACT_INFO.email}`}
-                            className="text-white/90 hover:text-white break-all"
+                            className="text-white/90 hover:text-white break-all text-xs sm:text-base"
                           >
                             {CONTACT_INFO.email}
                           </a>
@@ -117,19 +96,19 @@ export default function CTA() {
                     </div>
 
                     {CONTACT_INFO.whatsapp && (
-                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 group hover:border-white/40 transition-colors">
-                        <div className="flex items-start space-x-4">
-                          <div className="bg-secondary rounded-lg p-3 relative">
-                            <MessageCircle className="h-6 w-6 text-white" />
+                      <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-white/20 group hover:border-white/40 transition-colors">
+                        <div className="flex items-start space-x-3 sm:space-x-4">
+                          <div className="bg-secondary rounded-lg p-2 sm:p-3 relative">
+                            <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                             <div className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-[oklch(0.55_0.22_25)] opacity-0 group-hover:opacity-80 transition-opacity" />
                           </div>
                           <div>
-                            <h3 className="font-semibold mb-2">WhatsApp</h3>
+                            <h3 className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">WhatsApp</h3>
                             <a
                               href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/\D/g, '')}`}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="text-white/90 hover:text-white"
+                              className="text-white/90 hover:text-white text-xs sm:text-base"
                             >
                               Chat directo
                             </a>

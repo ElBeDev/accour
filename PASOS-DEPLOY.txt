@@ -1,0 +1,54 @@
+🚀 PASOS PARA PUBLICAR TU SITIO ACCOUR
+
+═══════════════════════════════════════════════════════════════
+
+PASO 1: CREAR REPOSITORIO EN GITHUB
+───────────────────────────────────────
+1. Ve a https://github.com
+2. Clic en el botón "+" → "New repository"
+3. Nombre: Accour
+4. Descripción: Sitio web de pintura electrostática industrial
+5. Público o Privado (tú decides)
+6. NO marques "Add README" ni ".gitignore"
+7. Clic en "Create repository"
+
+PASO 2: SUBIR EL CÓDIGO
+───────────────────────────────────────
+En la terminal, ejecuta (reemplaza TU-USUARIO con tu usuario de GitHub):
+
+git remote add origin https://github.com/TU-USUARIO/Accour.git
+git branch -M main
+git push -u origin main
+
+PASO 3: CONECTAR CON VERCEL
+───────────────────────────────────────
+1. Ve a https://vercel.com
+2. Clic en "Continue with GitHub"
+3. Autoriza Vercel a acceder a GitHub
+4. Clic en "Add New Project"
+5. Busca y selecciona el repositorio "Accour"
+6. Vercel detectará automáticamente Next.js
+7. Clic en "Deploy"
+
+PASO 4: CONFIGURAR VARIABLES DE ENTORNO (Opcional pero recomendado)
+───────────────────────────────────────
+En Vercel, ve a Settings → Environment Variables y agrega:
+
+NEXT_PUBLIC_SITE_NAME=ACCOUR
+NEXT_PUBLIC_EMAIL=ventasaccour@hotmail.com
+NEXT_PUBLIC_PHONE=427 112 9704
+NEXT_PUBLIC_ADDRESS=Morelos Sur No. 81, San Pedro Ahuacatlán, CP 76810
+NEXT_PUBLIC_WHATSAPP_NUMBER=5215512345678
+
+═══════════════════════════════════════════════════════════════
+
+✅ ¡LISTO! Tu sitio estará en: https://accour.vercel.app
+
+📝 Cada vez que hagas cambios y los subas a GitHub:
+   git add .
+   git commit -m "Descripción del cambio"
+   git push
+
+   Vercel automáticamente actualizará tu sitio.
+
+═══════════════════════════════════════════════════════════════
