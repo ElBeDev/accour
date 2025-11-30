@@ -38,10 +38,10 @@ export const SITE_CONFIG = {
 
 export const CONTACT_INFO = {
   phone: process.env.NEXT_PUBLIC_PHONE || "",
-  email: process.env.NEXT_PUBLIC_EMAIL || "",
-  address: process.env.NEXT_PUBLIC_ADDRESS || "",
-  businessHours: process.env.NEXT_PUBLIC_BUSINESS_HOURS || "",
-  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",
+  email: process.env.NEXT_PUBLIC_EMAIL || "ventasaccour@hotmail.com",
+  address: process.env.NEXT_PUBLIC_ADDRESS || "Zona Industrial, Ciudad de México",
+  businessHours: process.env.NEXT_PUBLIC_BUSINESS_HOURS || "Lun-Vie: 8:00-18:00, Sáb: 9:00-14:00",
+  whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5512345678",
 } as const;
 
 export const NAVIGATION_LINKS = [
