@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, MessageCircle } from 'lucide-react';
 import { SITE_CONFIG, NAVIGATION_LINKS, CONTACT_INFO } from '@/lib/constants';
 
 export default function Footer() {
@@ -37,14 +37,8 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-white font-semibold mb-4">Contacto</h4>
+            <h4 className="text-white font-semibold mb-4">Información de Contacto</h4>
             <ul className="space-y-3">
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 mr-2 mt-0.5 shrink-0" />
-                <a href={`tel:${CONTACT_INFO.phone}`} className="text-sm hover:text-white">
-                  {CONTACT_INFO.phone}
-                </a>
-              </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 mr-2 mt-0.5 shrink-0" />
                 <a href={`mailto:${CONTACT_INFO.email}`} className="text-sm hover:text-white break-all">
