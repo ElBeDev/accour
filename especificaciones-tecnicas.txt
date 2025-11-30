@@ -1,0 +1,121 @@
+ESPECIFICACIONES TÉCNICAS
+=========================
+
+PINTURA ELECTROSTÁTICA EN POLVO
+--------------------------------
+
+CARACTERÍSTICAS DEL PROCESO
+----------------------------
+• Método: Aplicación electrostática de polvo seco
+• Voltaje de aplicación: 30-100 kV
+• Temperatura de curado: 160-220°C
+• Tiempo de curado: 10-20 minutos (según especificación)
+• Espesor de película: 50-150 micrones
+• Eficiencia de transferencia: 95-98%
+
+TIPOS DE POLVO DISPONIBLES
+---------------------------
+1. Poliéster
+   - Alta resistencia a exteriores
+   - Excelente durabilidad
+   - Resistencia UV superior
+
+2. Epoxi
+   - Máxima protección anticorrosiva
+   - Uso en interiores
+   - Alta resistencia química
+
+3. Híbridos (Epoxi-Poliéster)
+   - Versatilidad
+   - Buena resistencia exterior
+   - Balance costo-beneficio
+
+4. Poliuretano
+   - Máxima flexibilidad
+   - Resistencia química superior
+   - Aplicaciones especiales
+
+ACABADOS DISPONIBLES
+--------------------
+• Liso/Mate
+• Semi-brillante
+• Alto brillo
+• Texturizado (rugoso)
+• Metálico
+• Martillado
+• Naranja
+
+COLORES
+-------
+• RAL: Gama completa disponible
+• Colores personalizados
+• Muestras bajo pedido
+
+CAPACIDADES DE PRODUCCIÓN
+--------------------------
+• Dimensiones máximas de piezas:
+  - Largo: 6 metros
+  - Ancho: 2 metros
+  - Alto: 2.5 metros
+
+• Peso máximo por pieza: 500 kg
+• Capacidad de producción: Según proyecto
+
+PREPARACIÓN DE SUPERFICIE
+--------------------------
+Opciones disponibles:
+• Desengrase químico
+• Granallado/Sandblasting
+• Fosfatizado
+• Imprimación (cuando se requiere)
+
+NORMAS Y CERTIFICACIONES
+-------------------------
+• Cumplimiento de normas de seguridad industrial
+• Procesos estandarizados
+• Control de calidad en cada etapa
+• Pruebas de adherencia y espesor
+
+PRUEBAS DE CALIDAD
+------------------
+• Medición de espesor de película
+• Prueba de adherencia (crosscut test)
+• Inspección visual
+• Prueba de impacto
+• Prueba de flexibilidad
+• Resistencia a niebla salina (cuando se requiere)
+
+CONDICIONES DE SERVICIO
+------------------------
+• Resistencia a temperaturas: -40°C a 120°C
+• Resistencia a intemperie: Excelente (poliéster)
+• Resistencia química: Según tipo de polvo
+• Vida útil esperada: 10-15 años (exterior, con mantenimiento)
+
+APLICACIONES ESPECÍFICAS
+-------------------------
+• Piezas automotrices
+• Estructuras metálicas
+• Muebles de oficina y hogar
+• Electrodomésticos
+• Maquinaria industrial
+• Herrería decorativa
+• Equipamiento urbano
+• Fachadas arquitectónicas
+
+VENTAJAS TÉCNICAS
+-----------------
+✓ Sin VOCs (Compuestos Orgánicos Volátiles)
+✓ 100% sólidos (sin solventes)
+✓ Mínimo desperdicio de material
+✓ Reciclaje de polvo no adherido
+✓ Proceso ecológico
+✓ Acabado uniforme
+✓ Excelente cobertura de bordes
+✓ Mayor espesor en una sola aplicación
+
+INFORMACIÓN ADICIONAL
+---------------------
+Para especificaciones técnicas adicionales o consultas sobre 
+aplicaciones especiales, favor de contactar a nuestro departamento 
+técnico.
