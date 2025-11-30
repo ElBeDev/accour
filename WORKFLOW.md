@@ -1191,9 +1191,9 @@ SEMANA 6: Lanzamiento
 
 **Última actualización:** 27 de Noviembre, 2025 - 18:00hrs
 
-**Estado del proyecto:** 🚀 FASE 2 COMPLETADA - Listo para Deploy
+**Estado del proyecto:** 🚀 OPTIMIZADO PARA MÓVIL Y DESKTOP - Listo para Deploy en Vercel
 
-**Progreso:** Frontend Development 100% ✅
+**Progreso:** Frontend Development 100% ✅ | Mobile Optimization 100% ✅ | Contacto Refinado ✅
 
 ---
 
@@ -1211,11 +1211,16 @@ SEMANA 6: Lanzamiento
 **Funcionalidades Core:**
 - ✅ Formularios con validación (React Hook Form + Zod)
 - ✅ API Routes funcionales (/api/contact, /api/quote)
-- ✅ Google Maps integrado (requiere API key)
-- ✅ Botón flotante de WhatsApp
+- ✅ Mapbox Maps integrado con ubicación real
+- ✅ Botón flotante de WhatsApp (único método de llamada)
 - ✅ Botón Scroll to Top
 - ✅ Navegación responsive completa
 - ✅ Animaciones profesionales (Framer Motion)
+- ✅ **Métodos de contacto optimizados:**
+  - Email: ventasaccour@hotmail.com (con mailto:)
+  - WhatsApp: +52 427 112 9704 (único método de voz)
+  - Dirección física visible
+  - **SIN** números telefónicos tradicionales
 
 **SEO y Optimización:**
 - ✅ Schema.org structured data (LocalBusiness + Organization)
@@ -1233,12 +1238,13 @@ SEMANA 6: Lanzamiento
 
 **Datos Reales Configurados:**
 - ✅ Dirección: Morelos Sur No. 81, San Pedro Ahuacatlán, CP 76810, San Juan del Río, Querétaro
-- ✅ Teléfono: 427 112 9704
-- ✅ WhatsApp: +52 427 112 9704
-- ✅ Email: ventasaccour@hotmail.com
+- ✅ Teléfono: **REMOVIDO** de Header, CTA y Footer (estrategia de contacto digital)
+- ✅ WhatsApp: +52 427 112 9704 (botón flotante + enlaces directos)
+- ✅ Email: ventasaccour@hotmail.com (con enlaces mailto:)
 - ✅ Coordenadas GPS: 20.3881, -99.9964
 - ✅ Director General: Abel Camacho Ugalde
 - ✅ Horarios: Lun-Vie 8AM-6PM, Sáb 9AM-2PM
+- ✅ **Valores por defecto en constants.ts** (no requiere .env para funcionar)
 
 ### ⏳ LO QUE FALTA (Antes de Deploy)
 
@@ -1251,17 +1257,18 @@ SEMANA 6: Lanzamiento
 6. 📸 Nosotros: 3 fotos de instalaciones/equipo
 7. 🎨 Optimizar todas las imágenes a WebP
 
-**Configuración Opcional:**
-8. 📧 Integrar Resend para envío real de emails
-9. 📊 Configurar Google Analytics
-10. ✅ Verificar textos finales
+**Deploy en Vercel:**
+8. ✅ Push a GitHub (COMPLETADO)
+9. ⏳ Ir a vercel.com → Continue with GitHub
+10. ⏳ Add New Project → Seleccionar 'accour'
+11. ⏳ Deploy (automático, sin configuración adicional)
+12. ⏳ Configurar dominio personalizado (opcional)
+13. ⏳ Variables de entorno en Vercel (opcional, hay valores por defecto)
 
-**Deploy:**
-9. Push a GitHub
-10. Configurar proyecto en Vercel
-11. Agregar variables de entorno en Vercel
-12. Configurar dominio personalizado
-13. Enviar sitemap a Google Search Console
+**Post-Deploy:**
+14. ⏳ Verificar que todos los textos se muestren correctamente
+15. ⏳ Probar formularios en producción
+16. ⏳ Enviar sitemap a Google Search Console
 
 ---
 
@@ -1389,13 +1396,26 @@ SEMANA 6: Lanzamiento
   - Grids adaptativos con breakpoints sm/md/lg
   - Touch targets 44px+ en todos los botones
   - WhatsApp y Scroll buttons optimizados
-  - Header y Footer responsive
-  - Viewport metadata configurado
+  - Header responsive con menú hamburguesa móvil
+  - Hero con scroll indicator oculto en mobile
+  - Footer con información de contacto completa
   - Ver documentación completa en **RESPONSIVE-MOBILE.md**
+- ✅ **Estrategia de contacto refinada** 📞
+  - Métodos de contacto: Email, WhatsApp, Dirección física
+  - Removidos todos los números telefónicos tradicionales
+  - WhatsApp como único método de llamada (botón flotante)
+  - Formularios con mailto: para contacto por email
+  - Header sin botón de teléfono (solo "Cotizar")
+  - CTA section sin botón "Llamar Ahora"
+  - Footer con 3 métodos: Mail, WhatsApp, MapPin
+  - Valores por defecto configurados en constants.ts
 
 ### 🔄 EN PROGRESO
 
-**FASE 3: Optimización y Mejoras**
+**FASE 3: Deploy en Vercel**
+- ⏳ Usuario debe ir a vercel.com y desplegar el proyecto
+- ⏳ Configuración de dominio personalizado (opcional)
+- ⏳ Monitoreo post-deployment
 
 ### ⏳ PENDIENTE
 
@@ -1542,17 +1562,31 @@ SEMANA 6: Lanzamiento
 - ✅ `src/app/api/quote/route.ts` - API formulario cotización ⭐ NUEVO
 - ✅ `src/app/globals.css` - Estilos globales + tema
 - ✅ `src/lib/constants.ts` - Constantes (con iconos Lucide)
+  - **Valores por defecto configurados:**
+  - email: "ventasaccour@hotmail.com"
+  - address: "Zona Industrial, Ciudad de México"
+  - whatsapp: "5512345678"
+  - phone: "" (vacío, no se usa)
 - ✅ `src/lib/utils.ts` - Utilidades
 - ✅ `src/lib/validations.ts` - Schemas de validación Zod ⭐ NUEVO
 - ✅ `src/types/index.ts` - TypeScript types
 - ✅ `src/components/layout/Header.tsx` - Navegación
+  - Menú responsive con hamburguesa móvil
+  - **Sin botón de teléfono** (removido)
+  - Botón "Cotizar" optimizado para móvil
 - ✅ `src/components/layout/Footer.tsx` - Pie de página
+  - **Solo 3 métodos de contacto:** Email, WhatsApp, Dirección
+  - **Sin número telefónico tradicional**
 - ✅ `src/components/sections/Hero.tsx` - Hero section
+  - Tipografía responsive (text-2xl → text-6xl)
+  - Scroll indicator oculto en mobile (hidden sm:flex)
 - ✅ `src/components/sections/Services.tsx` - Servicios
 - ✅ `src/components/sections/Process.tsx` - Proceso
 - ✅ `src/components/sections/Benefits.tsx` - Beneficios
 - ✅ `src/components/sections/Industries.tsx` - Industrias
 - ✅ `src/components/sections/CTA.tsx` - Call to action
+  - **Removido botón "Llamar Ahora"**
+  - Solo Email y WhatsApp como opciones
 - ✅ `src/components/ui/*` - 12 componentes Shadcn/ui
 - ✅ `src/components/ui/whatsapp-button.tsx` - Botón flotante WhatsApp
 - ✅ `src/components/ui/scroll-to-top.tsx` - Botón scroll arriba ⭐ NUEVO
@@ -1575,12 +1609,19 @@ SEMANA 6: Lanzamiento
 
 ### ✅ Configuración Completada
 - ✅ Dirección real: Morelos Sur No. 81, San Pedro Ahuacatlán, CP 76810, San Juan del Río, Querétaro
-- ✅ Teléfono: 427 112 9704
-- ✅ WhatsApp: +52 427 112 9704
+- ✅ Teléfono: **REMOVIDO** (sin contacto telefónico tradicional)
+- ✅ WhatsApp: +52 427 112 9704 (único método de llamada)
 - ✅ Email: ventasaccour@hotmail.com
 - ✅ Coordenadas GPS: 20.3881, -99.9964 (San Juan del Río, Qro)
 - ✅ Mapbox configurado con ubicación exacta
 - ✅ Información técnica real de PDFs implementada
+- ✅ **Optimización Móvil Completa** 📱
+  - Header responsive con botón "Cotizar"
+  - Hero con tipografía escalable (text-2xl → text-6xl)
+  - CTA sin botón de llamada telefónica
+  - Footer solo con Email, WhatsApp y Dirección
+  - Scroll indicator oculto en móviles
+  - Touch targets optimizados
 
 ### ⏳ Por Completar
 - ⏳ Imágenes reales: Reemplazar placeholders (ver GUIA-IMAGENES.md)
