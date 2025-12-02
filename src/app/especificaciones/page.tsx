@@ -402,33 +402,81 @@ export default function EspecificacionesPage() {
       <section className="bg-muted/50 py-20">
         <div className="container">
           <div className="mb-12 text-center">
+            <Badge className="bg-primary hover:bg-primary/90 mb-4">
+              Capacidad Instalada
+            </Badge>
             <h2 className="mb-4 text-3xl font-bold">Capacidades de Producción</h2>
-            <p className="text-muted-foreground">
-              Dimensiones máximas y capacidad de carga
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Capacidad de aplicación semanal de 5000 m² con disponibilidad inmediata del 38%
             </p>
           </div>
 
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-5xl space-y-6">
+            {/* Capacidad Semanal */}
+            <div className="grid gap-6 md:grid-cols-2 mb-8">
+              <Card className="border-2 border-primary/20">
+                <CardHeader className="text-center pb-3">
+                  <Factory className="mx-auto mb-2 size-12 text-primary" />
+                  <CardTitle className="text-4xl font-bold text-primary">5000 m²</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Capacidad Semanal</p>
+                  <p className="text-sm text-muted-foreground mt-1">Aplicación de recubrimiento</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-2 border-green-200 bg-green-50">
+                <CardHeader className="text-center pb-3">
+                  <CheckCircle2 className="mx-auto mb-2 size-12 text-green-600" />
+                  <CardTitle className="text-4xl font-bold text-green-600">38%</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Disponibilidad</p>
+                  <p className="text-sm text-muted-foreground mt-1">Capacidad inmediata</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Dimensiones */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Ruler className="size-6 text-primary" />
-                  Dimensiones Máximas de Piezas
+                  Rango de Tamaños de Piezas
                 </CardTitle>
+                <CardDescription>
+                  Desde pequeñas piezas hasta estructuras de gran tamaño
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid gap-6 md:grid-cols-3">
+                <div className="grid gap-6 md:grid-cols-2 mb-6">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Tamaño Mínimo</p>
+                    <p className="text-3xl font-bold text-primary">1 cm²</p>
+                    <p className="text-sm text-muted-foreground mt-2">Piezas pequeñas y componentes</p>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Volumen Máximo</p>
+                    <p className="text-3xl font-bold text-primary">5.2 m³</p>
+                    <p className="text-sm text-muted-foreground mt-2">Piezas de gran tamaño</p>
+                  </div>
+                </div>
+                <div className="grid gap-6 md:grid-cols-4">
                   <div>
-                    <p className="mb-2 text-sm font-medium text-muted-foreground">Largo</p>
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Largo Máximo</p>
                     <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxDimensions.length}</p>
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-muted-foreground">Ancho</p>
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Ancho Máximo</p>
                     <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxDimensions.width}</p>
                   </div>
                   <div>
-                    <p className="mb-2 text-sm font-medium text-muted-foreground">Alto</p>
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Alto Máximo</p>
                     <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxDimensions.height}</p>
+                  </div>
+                  <div>
+                    <p className="mb-2 text-sm font-medium text-muted-foreground">Volumen Máximo</p>
+                    <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxDimensions.volume}</p>
                   </div>
                 </div>
 

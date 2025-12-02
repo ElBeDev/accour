@@ -59,7 +59,7 @@ export default function NosotrosPage() {
                   servicios de recubrimiento de alta calidad, durabilidad y con tecnología de punta.
                 </p>
                 <p>
-                  Con más de 15 años de experiencia, nos hemos consolidado como uno de los 
+                  Con más de 20 años de experiencia certificados en ISO-9001:2015, nos hemos consolidado como uno de los 
                   proveedores líderes de pintura electrostática en polvo, atendiendo a cientos 
                   de empresas de diversos sectores industriales.
                 </p>
@@ -236,11 +236,17 @@ export default function NosotrosPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge variant="secondary" className="mb-4">Certificaciones</Badge>
+              <Badge variant="secondary" className="mb-4">Certificaciones y Homologaciones</Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Calidad Certificada y Procesos Estandarizados
               </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
+              <div className="space-y-4 text-gray-600 leading-relaxed mb-6">
+                <p className="text-lg font-semibold text-primary">
+                  ✓ Certificados en ISO-9001:2015
+                </p>
+                <p className="text-lg font-semibold text-primary">
+                  ✓ Homologados por CAF México como Proceso Especial
+                </p>
                 <p>
                   Nuestros procesos cumplen con las normas y estándares internacionales más 
                   exigentes de la industria del recubrimiento en polvo.
@@ -248,11 +254,23 @@ export default function NosotrosPage() {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 mt-1">•</span>
-                    <span>Procesos certificados según normas ISO de calidad</span>
+                    <span>Procesos certificados ISO-9001:2015</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2 mt-1">•</span>
+                    <span>Homologación CAF México - Proceso Especial</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 mt-1">•</span>
                     <span>Cumplimiento de especificaciones ASTM para recubrimientos</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2 mt-1">•</span>
+                    <span>Inspección ASTM D-3359 (adherencia y espesor)</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-secondary mr-2 mt-1">•</span>
+                    <span>Control de colorimetría y brillo</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 mt-1">•</span>
@@ -261,10 +279,6 @@ export default function NosotrosPage() {
                   <li className="flex items-start">
                     <span className="text-secondary mr-2 mt-1">•</span>
                     <span>Equipos calibrados y mantenidos regularmente</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-secondary mr-2 mt-1">•</span>
-                    <span>Compromiso con prácticas sustentables y ecológicas</span>
                   </li>
                 </ul>
               </div>

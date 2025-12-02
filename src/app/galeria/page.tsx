@@ -147,7 +147,7 @@ export default function GaleriaPage() {
             {[
               { value: '500+', label: 'Proyectos Completados' },
               { value: '150+', label: 'Clientes Satisfechos' },
-              { value: '15+', label: 'Años de Experiencia' },
+              { value: '20+', label: 'Años de Experiencia' },
               { value: '99%', label: 'Tasa de Satisfacción' },
             ].map((stat, index) => (
               <div key={index} className="text-center">

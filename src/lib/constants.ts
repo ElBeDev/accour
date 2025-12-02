@@ -259,11 +259,15 @@ export const TECHNICAL_SPECS = {
   curingTime: "10-20 minutos",
   filmThickness: "50-150 micrones",
   transferEfficiency: "95-98%",
+  weeklyCapacity: "5000 m²",
+  availableCapacity: "38%",
   maxDimensions: {
     length: "6 metros",
-    width: "2 metros",
-    height: "2.5 metros",
+    width: "3 metros",
+    height: "2 metros",
+    volume: "5.2 m³",
   },
+  minSize: "1 cm²",
   maxWeight: "500 kg",
   serviceTemp: "-40°C a 120°C",
   lifeExpectancy: "10-15 años (con mantenimiento)",
@@ -331,10 +335,10 @@ export const SURFACE_PREP = [
 ] as const;
 
 export const STATS = {
-  experience: "15+",
+  experience: "20+",
   experienceLabel: "Años de experiencia",
-  projects: "500+",
-  projectsLabel: "Proyectos completados",
+  projects: "5000+",
+  projectsLabel: "m² semanales de capacidad",
   clients: "150+",
   clientsLabel: "Clientes satisfechos",
   satisfaction: "98%",
