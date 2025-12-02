@@ -118,6 +118,7 @@ export const PROCESS_STEPS = [
     description: "Pretratamiento de la superficie para garantizar adherencia óptima.",
     icon: Droplets,
     details: [
+      "Limpieza láser",
       "Desengrase industrial",
       "Limpieza química profunda",
       "Fosfatado para protección base",

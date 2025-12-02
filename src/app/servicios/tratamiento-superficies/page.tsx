@@ -187,20 +187,20 @@ export default function TratamientoSuperficiesPage() {
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center shrink-0">
-                      <stage.icon className="h-6 w-6 text-primary" />
+                      <step.icon className="h-6 w-6 text-primary" />
                     </div>
                     <div className="flex-1">
                       <div className="text-sm text-primary font-semibold mb-1">
                         Etapa {index + 1}
                       </div>
-                      <CardTitle className="text-2xl">{stage.title}</CardTitle>
+                      <CardTitle className="text-2xl">{step.title}</CardTitle>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent className="pl-20">
-                  <p className="text-gray-600 mb-4">{stage.description}</p>
+                  <p className="text-muted-foreground mb-6">{step.description}</p>
                   <ul className="space-y-2">
-                    {stage.details.map((detail, i) => (
+                    {step.details.map((detail, i) => (
                       <li key={i} className="flex items-center text-sm text-gray-700">
                         <CheckCircle2 className="h-4 w-4 text-secondary mr-2 shrink-0" />
                         <span>{detail}</span>
