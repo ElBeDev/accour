@@ -141,7 +141,8 @@ export const PROCESS_STEPS = [
     description: "Proceso de horneado a temperatura controlada para fijar el recubrimiento.",
     icon: Flame,
     details: [
-      "Horno industrial de precisión",
+      "3 hornos industriales de gran capacidad",
+      "Dimensiones: 5.8m largo × 3.0m ancho × 2.0m alto",
       "Temperatura controlada 160-220°C",
       "Fusión y endurecimiento del polvo",
     ],

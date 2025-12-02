@@ -10,7 +10,10 @@ import {
   CheckCircle2,
   Beaker,
   Shield,
-  Palette
+  Palette,
+  Box,
+  Gauge,
+  Factory
 } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -133,6 +136,98 @@ export default function EspecificacionesPage() {
                 <p className="mt-2 text-sm text-muted-foreground">
                   Resistencia térmica del recubrimiento
                 </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Hornos de Curado */}
+      <section className="py-20 bg-linear-to-br from-orange-50 to-red-50">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <Badge className="bg-orange-600 hover:bg-orange-700 mb-4">
+              Infraestructura Industrial
+            </Badge>
+            <h2 className="mb-4 text-3xl font-bold">Sistema de Hornos de Curado</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Contamos con 3 hornos industriales de gran capacidad para procesar grandes volúmenes con eficiencia
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-5xl">
+            <div className="grid gap-6 md:grid-cols-3 mb-8">
+              <Card className="bg-white border-orange-200">
+                <CardHeader className="text-center pb-3">
+                  <Flame className="mx-auto mb-2 size-12 text-orange-500" />
+                  <CardTitle className="text-4xl font-bold text-orange-600">3</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Hornos Industriales</p>
+                  <p className="text-sm text-muted-foreground mt-1">Alta capacidad</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-orange-200">
+                <CardHeader className="text-center pb-3">
+                  <Box className="mx-auto mb-2 size-12 text-orange-500" />
+                  <CardTitle className="text-2xl font-bold text-orange-600">5.8 × 3.0 × 2.0</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Dimensiones (metros)</p>
+                  <p className="text-sm text-muted-foreground mt-1">Largo × Ancho × Alto</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-orange-200">
+                <CardHeader className="text-center pb-3">
+                  <Gauge className="mx-auto mb-2 size-12 text-orange-500" />
+                  <CardTitle className="text-3xl font-bold text-orange-600">34.8 m³</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Capacidad Total</p>
+                  <p className="text-sm text-muted-foreground mt-1">Por horno</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="bg-linear-to-br from-white to-orange-50 border-2 border-orange-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Factory className="size-6 text-orange-600" />
+                  Especificaciones de los Hornos
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <CheckCircle2 className="size-5 text-orange-500" />
+                      Dimensiones Internas
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• Largo: <span className="font-semibold text-gray-900">5.8 metros</span></li>
+                      <li>• Ancho: <span className="font-semibold text-gray-900">3.0 metros</span></li>
+                      <li>• Alto: <span className="font-semibold text-gray-900">2.0 metros</span></li>
+                      <li>• Volumen útil: <span className="font-semibold text-gray-900">34.8 m³ por horno</span></li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <CheckCircle2 className="size-5 text-orange-500" />
+                      Capacidades y Ventajas
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• Procesamiento de piezas grandes y volúmenes altos</li>
+                      <li>• Control preciso de temperatura (160-220°C)</li>
+                      <li>• Distribución uniforme de calor</li>
+                      <li>• Tiempos de curado optimizados (10-20 min)</li>
+                      <li>• Sistema de convección forzada</li>
+                      <li>• Mayor productividad y eficiencia</li>
+                    </ul>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
