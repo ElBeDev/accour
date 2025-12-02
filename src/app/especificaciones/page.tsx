@@ -142,6 +142,147 @@ export default function EspecificacionesPage() {
         </div>
       </section>
 
+      {/* Equipos de Aplicación */}
+      <section className="py-20 bg-linear-to-br from-blue-50 to-indigo-50">
+        <div className="container">
+          <div className="mb-12 text-center">
+            <Badge className="bg-blue-600 hover:bg-blue-700 mb-4">
+              Tecnología de Aplicación
+            </Badge>
+            <h2 className="mb-4 text-3xl font-bold">Sistema de Aplicación Electrostática</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              8 equipos semiautomáticos de última generación y 4 cabinas especializadas para aplicación uniforme y eficiente
+            </p>
+          </div>
+
+          <div className="mx-auto max-w-5xl">
+            <div className="grid gap-6 md:grid-cols-4 mb-8">
+              <Card className="bg-white border-blue-200">
+                <CardHeader className="text-center pb-3">
+                  <Zap className="mx-auto mb-2 size-12 text-blue-600" />
+                  <CardTitle className="text-4xl font-bold text-blue-600">8</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Equipos</p>
+                  <p className="text-sm text-muted-foreground mt-1">Semiautomáticos</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-blue-200">
+                <CardHeader className="text-center pb-3">
+                  <Box className="mx-auto mb-2 size-12 text-blue-600" />
+                  <CardTitle className="text-4xl font-bold text-blue-600">3</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Cabinas Abiertas</p>
+                  <p className="text-sm text-muted-foreground mt-1">Pintura estándar</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-blue-200">
+                <CardHeader className="text-center pb-3">
+                  <Shield className="mx-auto mb-2 size-12 text-blue-600" />
+                  <CardTitle className="text-4xl font-bold text-blue-600">1</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Cuarto Limpio</p>
+                  <p className="text-sm text-muted-foreground mt-1">Acabados premium</p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white border-blue-200">
+                <CardHeader className="text-center pb-3">
+                  <CheckCircle2 className="mx-auto mb-2 size-12 text-blue-600" />
+                  <CardTitle className="text-3xl font-bold text-blue-600">95-98%</CardTitle>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="font-semibold text-gray-900">Eficiencia</p>
+                  <p className="text-sm text-muted-foreground mt-1">Transferencia</p>
+                </CardContent>
+              </Card>
+            </div>
+
+            <Card className="bg-linear-to-br from-white to-blue-50 border-2 border-blue-200 mb-6">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Factory className="size-6 text-blue-600" />
+                  Equipos de Aplicación
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <CheckCircle2 className="size-5 text-blue-600" />
+                      Tecnología de Punta
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• <span className="font-semibold text-gray-900">8 equipos semiautomáticos</span> profesionales</li>
+                      <li>• Pistolas electrostáticas de alta precisión</li>
+                      <li>• Control digital de voltaje (30-100 kV)</li>
+                      <li>• Sistema de recuperación de polvo</li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <CheckCircle2 className="size-5 text-blue-600" />
+                      Resultados Garantizados
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• Aplicación uniforme y consistente</li>
+                      <li>• Eficiencia de transferencia 95-98%</li>
+                      <li>• Mínimo desperdicio de material</li>
+                      <li>• Acabado profesional certificado</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-linear-to-br from-white to-blue-50 border-2 border-blue-200">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Box className="size-6 text-blue-600" />
+                  Cabinas de Pintura Especializadas
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid gap-6 md:grid-cols-2">
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <Box className="size-5 text-blue-600" />
+                      3 Cabinas Abiertas
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• Diseño abierto para piezas de gran tamaño</li>
+                      <li>• Sistema de extracción y filtración</li>
+                      <li>• Iluminación industrial uniforme</li>
+                      <li>• Recuperación eficiente de polvo</li>
+                      <li>• Ideal para producción estándar</li>
+                    </ul>
+                  </div>
+
+                  <div className="space-y-3">
+                    <h4 className="font-semibold text-gray-900 flex items-center gap-2">
+                      <Shield className="size-5 text-blue-600" />
+                      1 Cabina Cuarto Limpio
+                    </h4>
+                    <ul className="ml-7 space-y-2 text-sm text-muted-foreground">
+                      <li>• Ambiente controlado libre de contaminantes</li>
+                      <li>• Filtración HEPA de alta eficiencia</li>
+                      <li>• Control de temperatura y humedad</li>
+                      <li>• Acabados premium sin imperfecciones</li>
+                      <li>• Ideal para proyectos de alta calidad</li>
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Hornos de Curado */}
       <section className="py-20 bg-linear-to-br from-orange-50 to-red-50">
         <div className="container">
@@ -191,7 +332,7 @@ export default function EspecificacionesPage() {
               </Card>
             </div>
 
-            <Card className="bg-linear-to-br from-white to-orange-50 border-2 border-orange-200">
+            <Card className="bg-linear-to-br from-white to-orange-50 border-2 border-orange-200 mb-6">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Factory className="size-6 text-orange-600" />
@@ -226,6 +367,29 @@ export default function EspecificacionesPage() {
                       <li>• Sistema de convección forzada</li>
                       <li>• Mayor productividad y eficiencia</li>
                     </ul>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Monitoreo Constante */}
+            <Card className="bg-linear-to-r from-orange-500 to-red-500 border-0 text-white">
+              <CardContent className="py-8">
+                <div className="flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                  <div className="shrink-0">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-6">
+                      <Gauge className="size-16 text-white" />
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-bold mb-3">Monitoreo Constante de Hornos</h3>
+                    <p className="text-lg text-orange-50 leading-relaxed">
+                      Constantemente monitoreamos nuestros hornos para garantizar un <span className="font-semibold text-white">curado correcto de las piezas recubiertas</span>. 
+                      Control en tiempo real de temperatura, tiempo de curado y calidad del proceso para asegurar acabados perfectos en cada ciclo.
+                    </p>
+                  </div>
+                  <div className="shrink-0">
+                    <CheckCircle2 className="size-16 text-white/80" />
                   </div>
                 </div>
               </CardContent>

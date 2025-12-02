@@ -129,6 +129,7 @@ export const PROCESS_STEPS = [
     description: "Uso de tecnología electrostática para aplicar el polvo de manera uniforme.",
     icon: Zap,
     details: [
+      "8 equipos semiautomáticos con tecnología de punta",
       "Carga electrostática del polvo",
       "Aplicación uniforme por atracción",
       "Cobertura completa sin desperdicio",
