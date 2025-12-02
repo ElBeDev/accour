@@ -19,6 +19,7 @@ import {
   Building,
   Microwave,
   Wrench,
+  Box,
 } from 'lucide-react';
 
 // Constantes de la aplicación
@@ -164,12 +165,52 @@ export const PROCESS_STEPS = [
 
 export const INDUSTRIES = [
   {
-    id: "automotriz",
-    name: "Automotriz",
+    id: "ferroviario",
+    name: "Transporte Ferroviario",
     icon: Car,
-    description: "Componentes y accesorios automotrices con acabados de alta resistencia.",
-    applications: ["Rines", "Chasis", "Partes de carrocería", "Accesorios"],
-    examples: ["Rines de aleación", "Marcos de puertas", "Soportes estructurales"],
+    description: "Recubrimientos especializados para vagones de pasajeros y componentes ferroviarios.",
+    applications: ["Vagones de pasajeros", "Estructuras ferroviarias", "Componentes de transporte"],
+    examples: ["Vagones ferroviarios CAF México", "Estructuras metálicas", "Paneles exteriores"],
+  },
+  {
+    id: "automotriz",
+    name: "Automotriz y Transporte",
+    icon: Car,
+    description: "Componentes automotrices y de transporte con acabados de alta resistencia.",
+    applications: ["Rines", "Chasis", "Partes de carrocería", "Transportes"],
+    examples: ["Piezas automotrices", "Marcos estructurales", "Componentes de vehículos"],
+  },
+  {
+    id: "gabinetes",
+    name: "Gabinetes Eléctricos",
+    icon: Box,
+    description: "Acabados protectores para gabinetes y tableros eléctricos industriales.",
+    applications: ["Gabinetes de control", "Tableros eléctricos", "Envolventes industriales"],
+    examples: ["Gabinetes eléctricos", "Tableros de distribución", "Cajas de control"],
+  },
+  {
+    id: "muebles",
+    name: "Muebles de Oficina y Jardín",
+    icon: Armchair,
+    description: "Acabados estéticos y duraderos para mobiliario de oficina y exterior.",
+    applications: ["Oficina", "Jardín", "Comercial", "Residencial"],
+    examples: ["Escritorios metálicos", "Muebles de jardín", "Archiveros"],
+  },
+  {
+    id: "publicidad",
+    name: "Anuncios y Publicidad",
+    icon: Building,
+    description: "Recubrimientos para señalización, anuncios y elementos publicitarios.",
+    applications: ["Anuncios espectaculares", "Carteleras", "Exhibidores", "Señalización"],
+    examples: ["Estructuras publicitarias", "Stands comerciales", "Displays metálicos"],
+  },
+  {
+    id: "iluminacion",
+    name: "Luminarias y Alumbrado",
+    icon: Zap,
+    description: "Acabados especializados para postes, luminarias y sistemas de iluminación.",
+    applications: ["Postes de alumbrado", "Luminarias", "Estructuras de iluminación"],
+    examples: ["Postes urbanos", "Luminarias decorativas", "Soportes de iluminación"],
   },
   {
     id: "maquinaria",
@@ -180,36 +221,12 @@ export const INDUSTRIES = [
     examples: ["Carcasas de motores", "Estructuras metálicas", "Paneles de control"],
   },
   {
-    id: "muebles",
-    name: "Muebles Metálicos",
-    icon: Armchair,
-    description: "Acabados estéticos y duraderos para mobiliario metálico.",
-    applications: ["Oficina", "Exterior", "Comercial", "Residencial"],
-    examples: ["Escritorios metálicos", "Estanterías", "Sillas de metal"],
-  },
-  {
     id: "construccion",
     name: "Construcción",
     icon: Building,
     description: "Recubrimientos para elementos arquitectónicos y estructurales.",
     applications: ["Fachadas", "Ventanería", "Herrería arquitectónica"],
     examples: ["Perfiles de aluminio", "Marcos de ventanas", "Barandales"],
-  },
-  {
-    id: "electrodomesticos",
-    name: "Electrodomésticos",
-    icon: Microwave,
-    description: "Acabados de calidad para línea blanca y electrodomésticos.",
-    applications: ["Línea blanca", "Pequeños electrodomésticos", "Gabinetes"],
-    examples: ["Paneles de refrigeradores", "Carcasas de hornos", "Gabinetes metálicos"],
-  },
-  {
-    id: "herreria",
-    name: "Herrería y Metalurgia",
-    icon: Wrench,
-    description: "Protección y estética para trabajos de herrería y metalurgia.",
-    applications: ["Portones", "Rejas", "Estructuras metálicas"],
-    examples: ["Portones residenciales", "Rejas de seguridad", "Escaleras metálicas"],
   },
 ] as const;
 
