@@ -74,30 +74,8 @@ export default function Benefits() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="mt-16 sm:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8"
+          className="mt-16 sm:mt-20"
         >
-          {[
-            { value: '95%', label: 'Eficiencia de aplicación' },
-            { value: '20+', label: 'Años de durabilidad' },
-            { value: '100%', label: 'Cobertura uniforme' },
-            { value: '0%', label: 'Desperdicio VOC' }
-          ].map((stat, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.7 + index * 0.1 }}
-              className="text-center"
-            >
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-2">
-                {stat.value}
-              </div>
-              <div className="text-sm text-gray-600 font-medium">
-                {stat.label}
-              </div>
-            </motion.div>
-          ))}
         </motion.div>
       </div>
     </section>
