@@ -11,7 +11,8 @@ import {
   Beaker,
   Waves,
   Target,
-  Award
+  Award,
+  Shield
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -88,72 +89,100 @@ export default function TratamientoSuperficiesPage() {
       <section className="py-20 lg:py-32 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center mb-16">
+            <Badge className="bg-blue-600 hover:bg-blue-700 mb-4">
+              Sistema Industrial Completo
+            </Badge>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-              Etapas del Tratamiento
+              Zona de Pretratamiento con 6 Etapas
             </h2>
-            <p className="text-lg text-gray-600">
-              Proceso completo en 5 etapas para preparación óptima
+            <p className="text-lg text-gray-600 mb-8">
+              Sistema profesional con tinas industriales de 5 mts × 0.8 mts y equipo de laboratorio para control de concentraciones en cada etapa
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="bg-white p-6 rounded-lg border-2 border-blue-200 shadow-sm">
+                <div className="text-3xl font-bold text-blue-900 mb-1">6 Etapas</div>
+                <div className="text-sm text-gray-600">Proceso completo</div>
+              </div>
+              <div className="bg-white p-6 rounded-lg border-2 border-blue-200 shadow-sm">
+                <div className="text-3xl font-bold text-blue-900 mb-1">5 × 0.8 m</div>
+                <div className="text-sm text-gray-600">Tinas industriales</div>
+              </div>
+              <div className="bg-white p-6 rounded-lg border-2 border-blue-200 shadow-sm">
+                <div className="text-3xl font-bold text-blue-900 mb-1">Control Lab</div>
+                <div className="text-sm text-gray-600">Concentraciones</div>
+              </div>
+            </div>
           </div>
 
           <div className="space-y-12 max-w-4xl mx-auto">
             {[
               {
                 icon: Sparkles,
-                title: 'Desengrase Alcalino',
+                title: '1. Desengrase Alcalino',
                 description: 'Remoción de aceites, grasas, lubricantes y contaminantes orgánicos mediante soluciones alcalinas calientes.',
                 details: [
                   'Temperatura controlada 60-80°C',
                   'pH optimizado para máxima eficiencia',
                   'Remoción de aceites de formado y manufactura',
-                  'Preparación para siguientes etapas',
+                  'Control de concentración en laboratorio',
                 ],
               },
               {
                 icon: Waves,
-                title: 'Enjuague',
-                description: 'Lavado con agua para eliminar residuos del desengrase y preparar para el fosfatado.',
+                title: '2. Enjuague 1',
+                description: 'Primer lavado con agua para eliminar residuos del desengrase.',
                 details: [
                   'Agua filtrada y controlada',
-                  'Eliminación total de residuos alcalinos',
-                  'Control de pH neutral',
-                  'Preparación para conversión química',
+                  'Eliminación de residuos alcalinos',
+                  'Preparación para siguiente etapa',
+                  'Control de arrastre de químicos',
                 ],
               },
               {
                 icon: Beaker,
-                title: 'Fosfatado',
+                title: '3. Fosfatado',
                 description: 'Creación de una capa de conversión química de fosfato de zinc o hierro que mejora adherencia y protege contra corrosión.',
                 details: [
                   'Capa cristalina de fosfato metálico',
                   'Barrera anticorrosiva adicional',
                   'Mejora de adherencia del recubrimiento',
-                  'Protección en caso de daño al acabado',
+                  'Monitoreo de concentración en laboratorio',
+                ],
+              },
+              {
+                icon: Waves,
+                title: '4. Enjuague 2',
+                description: 'Segundo enjuague para eliminar residuos del fosfatado.',
+                details: [
+                  'Agua limpia controlada',
+                  'Eliminación de exceso de fosfato',
+                  'Prevención de manchas',
+                  'Preparación para pasivado',
+                ],
+              },
+              {
+                icon: Shield,
+                title: '5. Pasivado/Sellado',
+                description: 'Aplicación de sellador para cerrar la capa de fosfato y mejorar la resistencia a la corrosión.',
+                details: [
+                  'Sellado de poros del fosfato',
+                  'Protección adicional anticorrosiva',
+                  'Mejora de uniformidad',
+                  'Control químico preciso',
                 ],
               },
               {
                 icon: Droplets,
-                title: 'Enjuague Final',
-                description: 'Lavado con agua desionizada para eliminar cualquier residuo y sales antes del secado.',
+                title: '6. Enjuague Final + Secado',
+                description: 'Lavado con agua desionizada y secado completo en horno para eliminar toda la humedad antes de la aplicación del recubrimiento.',
                 details: [
                   'Agua desionizada ultra pura',
                   'Eliminación de sales y químicos',
-                  'Prevención de manchas',
-                  'Superficie lista para secado',
+                  'Temperatura controlada de secado',
+                  'Superficie lista para aplicación de polvo',
                 ],
               },
-              {
-                icon: Target,
-                title: 'Secado',
-                description: 'Secado completo en horno para eliminar toda la humedad antes de la aplicación del recubrimiento.',
-                details: [
-                  'Temperatura controlada',
-                  'Eliminación total de humedad',
-                  'Superficie lista para pintura',
-                  'Control de calidad visual',
-                ],
-              },
-            ].map((stage, index) => (
+            ].map((step, index) => (
               <Card key={index} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
                   <div className="flex items-start gap-4">
