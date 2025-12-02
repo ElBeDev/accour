@@ -166,7 +166,7 @@ export default function IndustriasPage() {
                 benefits: [
                   'Resistencia a intemperie',
                   'No se descascara',
-                  'Larga vida útil',
+                  'Alta durabilidad',
                   'Bajo mantenimiento',
                 ],
               },

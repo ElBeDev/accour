@@ -482,17 +482,11 @@ export default function EspecificacionesPage() {
 
                 <Separator className="my-6" />
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3">
-                    <Weight className="size-6 text-primary" />
-                    <div>
-                      <p className="text-sm font-medium text-muted-foreground">Peso Máximo por Pieza</p>
-                      <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxWeight}</p>
-                    </div>
-                  </div>
+                <div className="flex items-center gap-3">
+                  <Weight className="size-6 text-primary" />
                   <div>
-                    <p className="text-sm font-medium text-muted-foreground">Vida Útil Esperada</p>
-                    <p className="text-xl font-bold">{TECHNICAL_SPECS.lifeExpectancy}</p>
+                    <p className="text-sm font-medium text-muted-foreground">Peso Máximo por Pieza</p>
+                    <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxWeight}</p>
                   </div>
                 </div>
               </CardContent>

@@ -287,7 +287,6 @@ export const TECHNICAL_SPECS = {
   minSize: "1 cm²",
   maxWeight: "500 kg",
   serviceTemp: "-40°C a 120°C",
-  lifeExpectancy: "10-15 años (con mantenimiento)",
 } as const;
 
 export const POWDER_TYPES = [

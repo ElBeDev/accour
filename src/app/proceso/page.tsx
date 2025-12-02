@@ -323,17 +323,11 @@ export default function ProcesoPage() {
 
                     <Separator className="my-6" />
 
-                    <div className="grid gap-6 md:grid-cols-2">
-                      <div className="flex items-center gap-3">
-                        <Weight className="size-6 text-primary shrink-0" />
-                        <div>
-                          <p className="text-sm font-medium text-muted-foreground">Peso Máximo por Pieza</p>
-                          <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxWeight}</p>
-                        </div>
-                      </div>
+                    <div className="flex items-center gap-3">
+                      <Weight className="size-6 text-primary shrink-0" />
                       <div>
-                        <p className="text-sm font-medium text-muted-foreground">Vida Útil Esperada</p>
-                        <p className="text-xl font-bold">{TECHNICAL_SPECS.lifeExpectancy}</p>
+                        <p className="text-sm font-medium text-muted-foreground">Peso Máximo por Pieza</p>
+                        <p className="text-2xl font-bold">{TECHNICAL_SPECS.maxWeight}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -474,8 +468,8 @@ export default function ProcesoPage() {
                 </AccordionTrigger>
                 <AccordionContent>
                   Ofrecemos garantía de calidad en el proceso y aplicación. La durabilidad del 
-                  acabado depende del uso y mantenimiento. En condiciones normales, el 
-                  recubrimiento puede durar más de 20 años sin deterioro significativo.
+                  acabado depende del uso y mantenimiento, proporcionando una excelente 
+                  resistencia a largo plazo contra corrosión, rayones y condiciones ambientales extremas.
                 </AccordionContent>
               </AccordionItem>
 

@@ -66,7 +66,7 @@ export default function TratamientoSuperficiesPage() {
                   del recubrimiento y proporciona protección anticorrosiva adicional.
                 </p>
                 <p className="font-semibold text-primary">
-                  Un tratamiento profesional puede aumentar la vida útil del recubrimiento 
+                  Un tratamiento profesional puede aumentar la durabilidad y resistencia del recubrimiento 
                   hasta 10 veces comparado con una preparación deficiente.
                 </p>
               </div>
@@ -233,7 +233,7 @@ export default function TratamientoSuperficiesPage() {
               {
                 icon: Award,
                 title: 'Durabilidad Extendida',
-                description: 'La vida útil del acabado aumenta significativamente gracias a la preparación óptima.',
+                description: 'El acabado aumenta significativamente su resistencia gracias a la preparación óptima.',
               },
               {
                 icon: CheckCircle2,
