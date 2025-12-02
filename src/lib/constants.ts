@@ -115,7 +115,7 @@ export const PROCESS_STEPS = [
     id: 1,
     order: 1,
     title: "Preparación",
-    description: "Limpieza y tratamiento de la superficie para garantizar adherencia óptima.",
+    description: "Pretratamiento de la superficie para garantizar adherencia óptima.",
     icon: Droplets,
     details: [
       "Desengrase industrial",
