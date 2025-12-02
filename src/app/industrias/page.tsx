@@ -223,10 +223,10 @@ export default function IndustriasPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '500+', label: 'Proyectos Industriales' },
+              { value: '5000+', label: 'm² Semanales' },
               { value: '150+', label: 'Empresas Satisfechas' },
-              { value: '15+', label: 'Años de Experiencia' },
-              { value: '6', label: 'Sectores Atendidos' },
+              { value: '20+', label: 'Años de Experiencia' },
+              { value: '8', label: 'Sectores Atendidos' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-primary mb-2">

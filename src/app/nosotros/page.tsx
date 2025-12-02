@@ -25,7 +25,7 @@ export default function NosotrosPage() {
               ACCOUR - Especialistas en Pintura Electrostática
             </h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Más de 15 años transformando la industria con recubrimientos de la más alta calidad
+              Más de 20 años transformando la industria con recubrimientos de la más alta calidad
             </p>
           </div>
         </div>
@@ -197,7 +197,8 @@ export default function NosotrosPage() {
             {[
               {
                 title: 'Experiencia Comprobada',
-                description: '15+ años atendiendo las necesidades de la industria con resultados excepcionales en más de 500 proyectos.',
+                description: '20+ años atendiendo las necesidades de la industria con resultados excepcionales en más de 5000 proyectos.',
+
               },
               {
                 title: 'Tecnología de Punta',

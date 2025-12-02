@@ -145,7 +145,7 @@ export default function GaleriaPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             {[
-              { value: '500+', label: 'Proyectos Completados' },
+              { value: '5000+', label: 'm² Semanales' },
               { value: '150+', label: 'Clientes Satisfechos' },
               { value: '20+', label: 'Años de Experiencia' },
               { value: '99%', label: 'Tasa de Satisfacción' },
